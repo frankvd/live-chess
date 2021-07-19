@@ -18,14 +18,17 @@ class Board
         $this->set(6, 1, new Piece());
     }
 
-    public function walk($cellFunc, $rowFunc)
+    public function render()
     {
+        $out = '';
         foreach ($this->cells as $row) {
             foreach ($row as $cell) {
-                $cellFunc($cell);
+                $out .= (string) $cell;
             }
-            $rowFunc();
+            $out .= "\n";
         }
+        
+        return $out;
     }
 
     public function set($row, $column, ?Piece $piece)
