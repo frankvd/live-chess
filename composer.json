@@ -1,0 +1,11 @@
+{
+    "name": "frankvd/live-chess",
+    "require": {
+        "symfony/console": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "frankvd\\LiveChess\\": "src/"
+        }
+    }
+}
