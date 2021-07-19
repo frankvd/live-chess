@@ -14,8 +14,6 @@ class Board
                 $this->cells[$row][$column] = new Cell(($row+$column) % 2);
             }
         }
-
-        $this->set(6, 1, new Piece());
     }
 
     public function render()
