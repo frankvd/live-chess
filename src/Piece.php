@@ -1,7 +1,5 @@
-<?php 
+<?php declare(strict_types=1);
 namespace frankvd\LiveChess;
-
-use IntlChar;
 
 class Piece 
 {
@@ -16,8 +14,8 @@ class Piece
     const KNIGHT = 4;
     const PAWN   = 5;
     
-    protected string $piece;
-    protected string $color;
+    protected int $piece;
+    protected int $color;
 
     public function __construct($piece = self::PAWN, $color = self::WHITE)
     {

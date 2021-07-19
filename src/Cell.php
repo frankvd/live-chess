@@ -1,4 +1,4 @@
-<?php 
+<?php declare(strict_types=1);
 namespace frankvd\LiveChess;
 
 class Cell 
@@ -7,7 +7,7 @@ class Cell
     const BLACK = 1;
 
     protected ?Piece $piece;
-    protected string $color;
+    protected int $color;
 
     public function __construct($color = self::WHITE, ?Piece $piece = null)
     {

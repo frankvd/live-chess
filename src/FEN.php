@@ -1,5 +1,4 @@
 <?php declare(strict_types=1);
-
 namespace frankvd\LiveChess;
 
 class FEN
